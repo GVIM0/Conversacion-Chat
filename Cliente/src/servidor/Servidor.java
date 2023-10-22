@@ -20,6 +20,7 @@ public class Servidor {
         try {
             ServerSocket serverSocket = new ServerSocket(puerto);
             System.out.println("Servidor de chat en línea, en el puerto " + puerto);
+                System.out.println(" ");
 
             while (true) {
                 

@@ -55,7 +55,7 @@ public class Cliente{
                         //Desencripta el Mensaje 
                         String Mensaje = Desencriptar_Texto(Mensaje_encriptado);
                         //Imprimir el Mensaje Desencriptado
-                        System.out.println("Mensaje del servidor: " + Mensaje);
+                        System.out.println(Mensaje);
                         
                     }
                 } catch (Exception e) {
@@ -111,6 +111,5 @@ public class Cliente{
         }
         return segmentos;
     }
-    
 }
 

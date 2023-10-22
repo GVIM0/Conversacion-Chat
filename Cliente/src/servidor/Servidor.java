@@ -14,7 +14,7 @@ public class Servidor {
          /*
             Se declaran las variables
         */    
-        int puerto = 9999; //Declaramos el puerto
+        int puerto = 9991; //Declaramos el puerto
         Socket socketCliente = null; //Se declara el socket del servidor
 
         try {

@@ -37,8 +37,10 @@ public class Lógica implements Runnable {
             while (true) {
                 // Leer un mensaje del cliente
                 String mensaje = (String) entrada.readObject();
-                System.out.println("Mensaje recibido del cliente: " + mensaje);
-
+                String[] Nom_Men = mensaje.split(":");
+                System.out.println("Mensaje recibido del cliente: " + Nom_Men[0]);
+                 System.out.println("Mensaje: " + Nom_Men[1]);
+                 
                 // Reenviar el mensaje a todos los clientes
                 enviarMensajeATodos(mensaje);
             }

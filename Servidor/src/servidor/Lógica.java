@@ -70,7 +70,7 @@ public class Lógica implements Runnable {
                   La segunda parte es el mensaje
                 */
                 String[] Nom_Men = mensaje.split(":");
-                System.out.println("Mensaje recibido del cliente a las " + formatoHora.format(new Date()));  // Imprime la hora actual
+                System.out.println("Mensaje recibido del cliente: " + Nom_Men[0] + " a las " + formatoHora.format(new Date()));  // Imprime la hora actual
                 System.out.println("Mensaje: " + Nom_Men[1]); //Imprime el mensaje del cliente
                 System.out.println(" ");
 

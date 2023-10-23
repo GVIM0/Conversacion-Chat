@@ -89,9 +89,7 @@ public class Cliente {
                 // Valida que el mensaje no esté vacío ni sea solo espacios en blanco
                 if (!mensaje.isEmpty()) {
                     // Agrega la hora actual al mensaje y lo envía al servidor
-                    SimpleDateFormat formatoHora = new SimpleDateFormat("HH:mm:ss");
-                    String mensajeConHora = "[" + formatoHora.format(new Date()) + "] " + mensaje;
-                    salida.writeObject(nombre + ": " + mensajeConHora);
+                    salida.writeObject(nombre + ": " + mensaje);
                 }
             }
 
